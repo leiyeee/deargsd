@@ -18,8 +18,9 @@
     <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
     <!--<script language="javascript" type="text/javascript" src="js/sketch.js"></script>-->
     <script defer src=https://Unpkg.com/processing-js></script>
+    <script src="js/sketch.js"></script>
+
 </head>
-<!-- //<script src="js/sketch.js"></script>-->
 
 <body style="color: white;">
 
@@ -30,10 +31,12 @@
             <div class="navig" onclick="nav(3);"><i class="fa fa-circle"></i> Section 3</div>
         </div>
     </div>
-
     <section class="fullPage" id="section1">
-        <div class="row" style="height: 100%; display: flex; align-items: center; justify-content: center;"><canvas data-processing-sources="mySketch.pde"></canvas></div>
+        
+        <div id="gen"></div>
+        <!--<div><img src="img/gundhall.png" alt="alternatetext" width="600" height="500"></div>-->
     </section>
+
     <section class="fullPage" id="section2">
         <div class='container-inner'>
             <ul>
@@ -107,9 +110,8 @@
         </div>
     </section>
     <section class="fullPage" id="section3">
-        <p>This is section 3</p>
+        <div class="row" style="height: 100%; display: flex; align-items: center; justify-content: center;"><canvas data-processing-sources="mySketch.pde"></canvas></div>
     </section>
-
     <section class="footer">
         <p>This is one small section</p>
     </section>
@@ -126,6 +128,4 @@
     <script src="js/textbox.js"></script>
     <script src="js/main.js"></script>
     <script src="js/animate.js"></script>
-</body>
-
-</html>
+</body></html>

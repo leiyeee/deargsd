@@ -5,10 +5,10 @@ String tousNoms, tousAdj, tousVerbes,nom;
 
 void setup() {
   size(300, 300);
-  background(200);
+  background(255);
   fill(50);
   textAlign(CENTER);
-  textSize(24);
+  textSize(20);
   listeNoms = loadStrings("assets/1.txt"); // le tableau "listeNoms" est composé des mots du fichier texte assemblés en une seule ligne
   listeAdj=loadStrings("assets/2.txt");
   listeVerbes=loadStrings("assets/2.txt");
@@ -24,7 +24,7 @@ void draw() {
 
 }
 void mouseReleased() {
-  background(200);
+  background(255);
   int n = int(random(listeNoms.length)); // choisit un élément du tableau listeNoms au hasard
   text(listeNoms[n], width/2, 80);
   int a = int(random(listeAdj.length));
