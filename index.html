@@ -36,19 +36,27 @@
         <div class='container-inner'>
             <ul>
                 <li>
-                    <div class='info' id="music">
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
-                        <audio preload="auto">
-                            <source src="assets/1.mp3" type="audio/mpeg">
-                            <source src="assets/1.ogg" type="audio/ogg"> Your browser does not support this audio format. </audio>
+                    <div class='info'>
+                        <p onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')">Hover Over Me To Play</p>
+                        <audio id='mySound' src='http://upload.wikimedia.org/wikipedia/commons/6/6f/Cello_Live_Performance_John_Michel_Tchaikovsky_Violin_Concerto_3rd_MVT_applaused_cut.ogg' />
                     </div>
                 </li>
                 <li>
-                    <div class='info' id="music">
+                    <div class='info'>
                         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
-                        <audio preload="auto">
-                            <source src="assets/2.mp3" type="audio/mpeg">
-                            <source src="assets/2.ogg" type="audio/ogg"> Your browser does not support this audio format. </audio>
+                        <audio id='mySound' src='http://upload.wikimedia.org/wikipedia/commons/6/6f/Cello_Live_Performance_John_Michel_Tchaikovsky_Violin_Concerto_3rd_MVT_applaused_cut.ogg' />
+                        <script>
+                            function PlaySound(soundobj) {
+                                var thissound = document.getElementById(soundobj);
+                                thissound.play();
+                            }
+
+                            function StopSound(soundobj) {
+                                var thissound = document.getElementById(soundobj);
+                                thissound.pause();
+                                thissound.currentTime = 0;
+                            }
+                        </script>>
                     </div>
                 </li>
                 <li>
@@ -112,6 +120,7 @@
     <section class="footer">
         <p>This is one small section</p>
     </section>
+
     <!--boostrap & jquery-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
@@ -122,6 +131,4 @@
     <script src="js/textbox.js"></script>
     <script src="js/main.js"></script>
     <script src="js/animate.js"></script>
-</body>
-
-</html>
+</body></html>
