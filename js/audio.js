@@ -1,19 +1,64 @@
-$('.soundbutton').on('mousedown', function () {     
-    playWind();                                  //start wind sound
-})
-.on('mouseup', function () {                    
-    stopWind();                                  //stops the wind sound
-});
+let sound;
+let bgColor;
+let analyzer;
 
-
-// my full functions to start and stop
-
-function playWind () {                           //start wind audio
-  $('#wind-sound')[0].volume = 0.7;
-  $('#wind-sound')[0].load();
-  $('#wind-sound')[0].play();
+function preload() {
+    sound = loadSound('./assets/KW.mp3');
 }
-function stopWind () {                           //stop the wind audio
-  $('#wind-sound')[0].pause();
-  $('#wind-sound')[0].currentTime = 0;           //resets wind to zero/beginning
+
+function setup() {
+    let canvas = createCanvas(windowWidth, windowHeight);
+    canvas.parent('kw')
+    analyzer = new p5.Amplitude();
+    analyzer.setInput(sound);
+    fft = new p5.FFT();
+}
+
+function draw() {
+    background(0);
+    let rms = analyzer.getLevel();
+    fill(230, 16, 141, 150);
+    noStroke();
+    circle(width / 2, height / 2, rms * width);
+
+    let spectrum = fft.analyze();
+    noStroke();
+    fill(255);
+    for (let i = 0; i < spectrum.length; i += 12) {
+        fill(46, 81, 155);
+        let x = map(i, 0, spectrum.length, 0, width * 1.35);
+        let h = map(spectrum[i], 0, 255, height, 0);
+        for (let j = height; j > h + 10; j -= 25) {
+            fill(random(0, 127), random(127, 255), (127, 255));
+            textSize(20);
+            text(int(random(0, 2)), x + 10, j);
+        }
+        text(1, x + 10, h + 12);
+        fill(152, 243, 0);
+        textSize(15);
+        text(spectrum[i], x + 5, h);
+    }
+    beginShape();
+    stroke(255);
+    noFill();
+    for (let i = 0; i < spectrum.length; i += 6) {
+        let x = map(i, 0, spectrum.length, 0, width * 1.35);
+        let y = map(spectrum[i], 0, 255, height, 0);
+        curveVertex(x, y - 60);
+    }
+    endShape();
+}
+
+function mousePressed() {
+    bgColor = color(255, 0, 0);
+    if (sound.isPlaying() == false) {
+        sound.loop();
+        analyzer = new p5.Amplitude();
+        analyzer.setInput(sound);
+    }
+}
+
+function mouseReleased() {
+    bgColor = color(0, 0, 255);
+    sound.stop();
 }
