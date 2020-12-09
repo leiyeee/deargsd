@@ -9,6 +9,7 @@ function preload() {
 function setup() {
     let canvas = createCanvas(windowWidth, windowHeight);
     canvas.parent('kw')
+    canvas.style("z-index","-1")
     analyzer = new p5.Amplitude();
     analyzer.setInput(sound);
     fft = new p5.FFT();

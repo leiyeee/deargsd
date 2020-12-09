@@ -18,13 +18,13 @@ section.fullPage {
 }
 
 .navig {
-    color: white;
+    color: #4b4b4b;
     margin: 10px 30px;
     font-size: 14px;
 }
 
 .navig:hover {
-    color: pink;
+    color: white;
     cursor: pointer;
 }
 
@@ -39,6 +39,11 @@ section.fullPage {
 
 .fullPage {
     height: 100vh;
+}
+.fuPage {
+    height: 300vh;
+    width: 100vw;
+     padding: 0 var(--horizontalMargin);
 }
 
 .fullPagePadding {
@@ -59,7 +64,7 @@ section.fullPage {
 
 
 
-li {
+.container-inner li {
 
     background-color: rgba(256, 18, 156, 0.9);
     -webkit-perspective: 360px;
@@ -637,5 +642,44 @@ header p {
     transform: translate(0, 0);
     opacity: 1;
 }
+
+.videotitle {
+    border-right: solid 3px rgba(0, 255, 0, .75);
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    color: rgba(255, 255, 255, .70);
+}
+
+/* Animation */
+.videotitle {
+    animation: animated-text 6s steps(29, end) 1s 1 normal both,
+        animated-cursor 600ms steps(29, end) infinite;
+}
+
+/* text animation */
+@keyframes animated-text {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 300px;
+    }
+}
+
+/* cursor animations */
+@keyframes animated-cursor {
+    from {
+        border-right-color: red;
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+
 
 

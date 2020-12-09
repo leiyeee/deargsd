@@ -7,6 +7,7 @@
     <!--css-->
     <!--  <link rel="stylesheet" href="css/circle.sass">-->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/timeline.css">
 
     <!--bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -16,129 +17,304 @@
     <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/addons/p5.sound.min.js" type="text/javascript"></script>
     <script defer src=https://Unpkg.com/processing-js></script>
+    <!--timline-->
 
 </head>
 
 <body style="color: white;">
+    <script src="https://use.typekit.net/bkt6ydm.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
     <div class="navigation">
         <div>
-            <div class="navig" onclick="nav(1);"><i class="fa fa-circle"></i> Section 1</div>
-            <div class="navig" onclick="nav(2);"><i class="fa fa-circle"></i> Section 2</div>
-            <div class="navig" onclick="nav(3);"><i class="fa fa-circle"></i> Section 3</div>
-            <div class="navig" onclick="nav(4);"><i class="fa fa-circle"></i> Section 4</div>
-            <div class="navig" onclick="nav(5);"><i class="fa fa-circle"></i> Section 5</div>
+            <div class="navig" onclick="nav(1);"><i class="fa fa-circle"></i> Intro</div>
+            <div class="navig" onclick="nav(2);"><i class="fa fa-circle"></i> MDes changes</div>
+            <div class="navig" onclick="nav(3);"><i class="fa fa-circle"></i> gsd.confession</div>
+            <div class="navig" onclick="nav(4);"><i class="fa fa-circle"></i> Dean's voice</div>
+            <div class="navig" onclick="nav(5);"><i class="fa fa-circle"></i> Ways to communicate</div>
+            <div class="navig" onclick="nav(6);"><i class="fa fa-circle"></i> How to protest</div>
+            <div class="navig" onclick="nav(7);"><i class="fa fa-circle"></i> KW's voice</div>
+            <div class="navig" onclick="nav(8);"><i class="fa fa-circle"></i> Historical protest 1969</div>
+            <div class="navig" onclick="nav(9);"><i class="fa fa-circle"></i> Protest 2019</div>
+            <div class="navig" onclick="nav(10);"><i class="fa fa-circle"></i> Make your voice out</div>
         </div>
     </div>
-    <section class="fullPage" id="section1" style="padding-bottom: 30px">
+    <section class="fullPage fullPagePadding" id="section1" style="padding-bottom: 30px">
         <div class="row" style="height: 100%; display: flex; align-items: center; justify-content: center;">
             <canvas data-processing-sources="dg.pde"></canvas>
         </div>
     </section>
-    <section class="fullPage" id="section2">
+
+    <section class="fuPage fullPagePadding" id="section2">
+        <div class="container1" style="height: 100%; display: flex; align-items: center; justify-content: center;">
+            <div class="row row-cols-3">
+                <div class="col pull-right year">10/22/2020</div>
+                <div class="col big">
+                    <p>>>Dear MDes students,<br>Please join MDes Program Director, Michael Hays, and Dean Sarah Whiting for a Town Hall meeting this Thursday, October 22nd at 12:30 pm. On the agenda will be the Spring 2021 semester and<b> the Future of the MDes program.</b><br>Topic: MDes Town Hall
+
+                        Time: Oct 22, 2020 12:30 PM <br>Eastern Time (US and Canada)</p>
+                </div>
+                <div class="col aside">Mdes Townhall meeting</div>
+                <div class="col pull-right year">10/23/2020</div>
+                <div class="col big">
+                    <p>>>Dear GSD Community,<br>
+
+
+
+                        I write to share with you some exciting updates to our Master in Design Studies program, a realm of the GSD that incubates some of our most innovative interdisciplinary design work. This program refresh further deepens the MDes program’s historic commitment to a pedagogy of nimble and independent design research, while also multiplying productive overlaps between the program and the school’s departments. These changes emerge from an ongoing internal review, which includes conversations <strong>with students, faculty, alumni, </strong>and design professionals, and discussions with program director K. Michael Hays, as well as Jorge Silvetti, who was among the MDes program’s originators, and John May, who directed the program prior to Hays. </p>
+                </div>
+                <div class="col aside">Official annoncement of changs in Mdes program</div>
+                <div class="col pull-right year">.10/23/2020</div>
+                <div class="col big">
+                    <p>>>Hi, my fellow GSD and MDes classmates and friends,<br><br>
+
+
+
+                        After the town hall yesterday, I and many of my friends left the meeting with a bad after-taste.
+
+                        We, students at the GSD, are going through a LOT OF STRESS because of the COVID situation. We are studying, working, and living, spending 24-hour lives, in our homes and apartments without getting ANY benefits from the school's infrastructure whatsoever.
+
+
+                        ON TOP of that, on top of all the stress and problems we are going through, I feel our voices are NOT being listened to by the Dean. The message I got from the town hall meeting is that EITHER we SWALLOW the new rules, OR we have to LEAVE. AND there is NO SPACE for discussions about our problems, the economic and psychological stress we are going through, on top of the entirely new reconstruction of our programs that the school is IMPOSING on us without ANY kind of CONSULTATION.</p>
+                </div>
+                <div class="col aside">First open letter from Mdes student<b> Ran Mei</b></div>
+                <div class="col pull-right year">10/26/2020</div>
+                <div class="col big">
+                    <p>>>Dear Students of the MDes Program<br>
+
+                        <br>I am writing this brief note just to clear up what we see as few failures of messaging about the reconfiguration of the MDes program.<br>
+
+                        The current Areas of Concentration are defined by two things: required courses in the respective discourses and methodologies (we tend to call them “proseminars”) and the subsequent organization of each individual student’s courses. Fundamentally the Areas are paths through the curriculum. The path through the curriculum is what the reorganization calls “Trajectories.” In short, Trajectories are exactly analogous to the Areas. What is more, all the names of the present Areas can still, in principle, be deployed using the new system. Perhaps we should have emphasized that more. A top priority of the change was to enable MDes students more autonomy in determining their areas of study or Trajectories.<br>
+
+                        In order to enable this expansion of the number of Trajectories, we provided four basic Domains of knowledge from which the Trajectories are launched. These are foundations, which, as the present program, provide knowledge about discourses and methodologies common across specializations. They are not degree areas. In fact, the required courses in each Domain are few, probably three, to be taken in the first year. But please note that, unlike in the present system, all Trajectories, by virtue of being launched from Domains, will now equally be provided with required foundation courses. In the previous system, areas with a small number of students did not have their own designated discourse and methods courses. And note, too, that, while different Trajectories can be launched for the same Domain, the same Trajectory can be launched from different Domains. In this way, we achieve maximum rigor plus maximum flexibility and nuance.<br>
+
+                    </p>
+                </div>
+                <div class="col aside">Official explanation from M.K.Hays</div>
+                <div class="col pull-right year">10/28/2020</div>
+                <div class="col big">Dear Dean Whiting:<br><br>
+
+                    This is Shikun Zhu from MDes ADPD 20. As a recent graduate of MDes family, on behalf of many beloved MDes fellow students, faculties and families, I want to share the open letter: https://deargsd.com/ regarding your restructure announcement of MDes last Thursday, as our response.
+
+                    All of our concerns and statements have been elaborated within the letter, and we wish you could take some time to read, think and response; You will also notice it has been signed by more than 170 members of our community, from current students to alumni. With the love and concern for MDes, the conversation and discussion will also be brought to a bigger platform, as we believe the future of MDes will reveal GSD`s attitude towards design pedagogy and how GSD justify itself as Graduate School of DESIGN in the first place.
+                    <br>
+                    Looking forward to hearing from you,
+                    Shikun and MDes Community
+                </div>
+                <div class="col aside">Second open letter from Mdes student</div>
+                <div class="col pull-right year">11/11/2020</div>
+                <div class="col big">
+                    <p>Sean Conlon>>All-<br>
+
+
+
+                        After carefully reviewing the number of submitted leave petitions by yesterday’s deadline, as well as the noted semester to return from leave, we are relieved to report that we are just at the threshold where we can avoid running a lottery for returns. Everyone should be aware, however, that the number of leaves will result in a bubble – a larger than typical number of enrolled students. To accommodate that bubble, in upcoming years we will likely have to extend studio space beyond Gund and 485 Broadway to the Sumner and Kirkland houses as well. Please bear this in mind as you envision your returns.
+                        <br><br>Laura Snowdon>><br>I guess you had a relaxing day!! Maybe call you tomorrow? How many leaves? Interesting about space. MDes will likely be unhappy.
+                        <br>
+                        Thanks for all of this, wish I could support you more.
+                        <br>
+                        Laura
+                        <br>
+                        Sent from my Verizon, Samsung Galaxy smartphone
+                        <br>
+                        Get Outlook for Android
+                    </p>
+                </div>
+                <div class="col aside">Private email between Laura Snowdon,dean of stuents, and Sean Conlon</div>
+                <div class="col pull-right year">11/12/2020</div>
+                <div class="col big">
+                    <p>>>Dear MDes Students,<br>
+
+
+                        I want to apologize for the email I accidentally sent to the GSD community yesterday and clarify my error in thinking MDes students would not be happy with the email sent earlier from Sean. I inferred, incorrectly, that MDes student space may be infringed upon because of the studio tray overflow resulting from LOAs. However, I responded too quickly and misinterpreted the information. MDes spaces will NOT be impacted. The unhappiness I referred to was ill-informed due to my haste and I apologize if I caused you any unnecessary worry.
+
+
+                        <br>
+                        With sincere apologies,
+
+                        <br>
+
+                        Laura
+                    </p>
+                </div>
+                <div class="col aside">Follow up to previous email
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="fullPage fullPagePadding" id="section3">
         <div class="row container-inner" style="height: 100%; display: flex; align-items: center; justify-content: center;">
             <ul>
                 <li>
                     <div class='info'>
-                        <p>Hover Over Me To Play</p>
-
+                        <p style=" text-align: center; margin-top: 50%;">MDead</p>
                     </div>
                 </li>
                 <li>
                     <div class='info'>
-                        <p>Hover Over Me To Play</p>
+                        <p style=" text-align: center; margin-top: 10%;">We better get a listening session on MDes with the Dean and administration before they even think about sending another vague, blase email that serves only to cover ass rather than provide meaningful support or information</p>
                     </div>
                 </li>
                 <li>
                     <div class='info'>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+                        <p style=" text-align: center; margin-top: 25%;">The new classification of MDes feels like those meaningless appreal choices and character customisations you need to made when you start a Low quality RPG game</p>
                     </div>
                 </li>
                 <li>
                     <div class='info'>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+                        <p style=" text-align: center; margin-top: 40%;">If this post gets 100 likes I'll start a petition to deman the dean's resignation</p>
                     </div>
                 </li>
                 <li>
                     <div class='info'>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+                        <p style=" text-align: center; margin-top: 50%;">Does anyone honestly think Mohsen ever was any better?</p>
                     </div>
                 </li>
                 <li>
                     <div class='info'>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+                        <p style=" text-align: center; margin-top: 40%;">Please read and sign in solidarity with MDes: https://deargsd.com/</p>
                     </div>
                 </li>
                 <li>
                     <div class='info'>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+                        <p style=" text-align: center; margin-top: 35%;">The email KMH sent about "MDes messaging" was a huge pile of bullshit and half of it was gibberish</p>
                     </div>
                 </li>
                 <li>
                     <div class='info'>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+                        <p style=" text-align: center; margin-top: 10%;">The admin wants to talk to MDes students in small groups becaus they bel;ieve that it'll make our vocie weaker and it'll easier to get students to accquiesce(divide and conquer)-this an intimidation strategy. fuck bullies</p>
                     </div>
                 </li>
                 <li>
                     <div class='info'>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+                        <p style=" text-align: center; margin-top: 20%;">Before the MDes reform, MDes technology is same with CS, MDess real estate is same with Business school. I think the reform give us a new horizon of the future of design</p>
                     </div>
                 </li>
                 <li>
                     <div class='info'>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+                        <p style=" text-align: center; margin-top: 40%;">I was so excited to apply for the MDes program which doesn't even exist anymore?</p>
                     </div>
                 </li>
                 <li>
                     <div class='info'>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+                        <p style=" text-align: center; margin-top: 50%;">What is MDes?</p>
                     </div>
                 </li>
                 <li>
                     <div class='info'>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+                        <p style=" text-align: center; margin-top: 50%;">Is DDes next??</p>
                     </div>
                 </li>
             </ul>
         </div>
     </section>
-    <section class="fullPage" id="section3">
-        <div class="row" style="height: 100%; display: flex; align-items: center; justify-content: center;">
-            <canvas data-processing-sources="mySketch.pde"></canvas>
-        </div>
-    </section>
     <section class="fullPage" id="section4">
         <main class="container">
             <div class="effect effect-a">
-                <h1 class="effect__heading">“Time is a drug. Too much of it kills you.” </h1>
-                <h2 class="effect__subheading">Terry Pratchett</h2>
+                <h1 class="effect__heading">“Maybe disciplinarity is a scary world thant makes people think about a single thing” </h1>
+                <h2 class="effect__subheading">Sarah Whiting</h2>
                 <p onmouseover="PlaySound('mySound1')" onmouseout="StopSound('mySound1')">Hover Over Me To Play</p>
                 <audio id='mySound1' src='https://upload.wikimedia.org/wikipedia/commons/a/a2/Sarch1.ogg' />
 
             </div>
 
             <div class="effect effect-b">
-                <h1 class="effect__heading">“Sometimes you wake up. Sometimes the fall kills you. And sometimes, when you fall, you fly.” </h1>
-                <h2 class="effect__subheading"> Neil Gaiman</h2>
+                <h1 class="effect__heading">“This program refresh further deepens the MDes program’s historic commitment to a pedagogy of nimble and independent design research, while also multiplying productive overlaps between the program and the school’s departments.” </h1>
+                <h2 class="effect__subheading">On MDes Change</h2>
 
             </div>
 
             <div class="effect effect-c">
-                <h1 class="effect__heading">“Pain is inevitable. Suffering is optional.” </h1>
-                <h2 class="effect__subheading">Haruki Murakami</h2>
+                <h1 class="effect__heading">“You have the expertise of the deisgner. And you have to know what deisgners can do to actually push those fields and also have those fileds push us” </h1>
+                <h2 class="effect__subheading">Sarah Whiting</h2>
                 <p onmouseover="PlaySound('mySound2')" onmouseout="StopSound('mySound2')">Hover Over Me To Play</p>
                 <audio id='mySound2' src='https://upload.wikimedia.org/wikipedia/commons/8/89/Sarah2.ogg' />
             </div>
 
             <div class="effect effect-d">
-                <h1 class="effect__heading">“That's what careless words do. They make people love you a little less.”</h1>
-                <h2 class="effect__subheading">Arundhati Roy</h2>
+                <h1 class="effect__heading">“This is a big place. There are a lot of you.”</h1>
+                <h2 class="effect__subheading">Sarah Whiting</h2>
                 <p onmouseover="PlaySound('mySound3')" onmouseout="StopSound('mySound3')">Hover Over Me To Play</p>
                 <audio id='mySound3' src='https://upload.wikimedia.org/wikipedia/commons/9/94/Sarah3.ogg' />
             </div>
         </main>
     </section>
-    <section class="fullPage" id="section5">
+    <section class="fullPage fullPagePadding" id="section5">
+        <div class="row" style="height: 100%; display: flex; align-items: center; justify-content: center; text-align: center">
+            <div class="col-6 story" data-aos="fade-in">
+                <div id="videoText" data-aos="fade-in">
+                    <p class="videotitle">"Connections..."</p>
+                </div>
+                <p data-aos="fade-in">
+                   The admin missed connections with students even though they offered the open office hours and townhall meetings. But these had little meaningful resluts. Conflcits might further lead to protests from students.
+
+                </p>
+            </div>
+            <div class="col"><img src="img/lei.png" alt="world" width="800" height="476"></div>
+        </div>
+    </section>
+    <section class="fullPage fullPagePadding" id="section6">
+          <div class="row" style="height: 100%; display: flex; align-items: center; justify-content: center; ">
+            <div class="col-6 story" data-aos="fade-in">
+                <div id="videoText" data-aos="fade-in">
+                    <p class="videotitle">"Recreating the past..."</p>
+                </div>
+                <p data-aos="fade-in">
+                   Based on the former protests, for students, printing has been a strong tool to represnt themselves. Meanwhile, these posters, with simple and powerful slogans,  could be brought back to life instead of being stored in the museum as "dead art"
+
+                </p>
+            </div>
+            <div class="col"><img src="img/6.png" alt="world" width="540" height="600"></div>
+        </div>
+    </section>
+
+    <section class="fullPage fullPagePadding" id="section7">
+     
         <div id="kw"></div>
+    </section>
+
+    <section class="fullPage fullPagePadding" id="section8">
+        <div class="row" style="height: 100%; display: flex; align-items: center; justify-content: center; ">
+            <div class="col-6 story" data-aos="fade-in">
+                <div id="videoText" data-aos="fade-in">
+                    <p class="videotitle">"Student Protest 1969..."</p>
+                </div>
+                <p data-aos="fade-in">
+                    <b>Printing became the protestors' most powerful tool.</b> They published documents purloined from the deans' offices in the underground newspaper, Old Mole. Graduate School of Design students established the Strike Poster Workshop in the Great Space of Robinson Hall. They chose the red fist as the symbol of their dissent, designed silkscreens and cut stencils, and printed the fist on paper, t-shirts, and arm bands. The workshop created a variety of strike poster designs with an assortment of protest slogans, including "End ROTC," "Maybe They Can't Hear Us, Strike a Little Louder," and "12345678 STRIKE." 
+                </p>
+            </div>
+            <div class="col"><img src="img/fest.jpg" alt="world" width="462" height="600"></div>
+        </div>
+    </section>
+    <section class="fullPage fullPagePadding" id="section9">
+        <div class="row" style="height: 100%; display: flex; align-items: center; justify-content: center; ">
+            <div class="col-6 story" data-aos="fade-in">
+                <div id="videoText" data-aos="fade-in">
+                    <p class="videotitle">"Student protest 2019..."</p>
+                </div>
+                <p data-aos="fade-in">
+                    In December of 2019, graduate students at Harvard University began strike action on Tuesday after negotiations between their union and the administration failed to reach an agreement. Several hundred members of the Harvard Graduate Students Union–United Automobile Workers (HGSU-UAW) began picketing at 10 a.m. in Harvard Yard in Cambridge, Massachusetts. Some 2,500 of the university’s more than 4,000 grad students voted in October to authorize a strike. (Kate Randall) <b>Students holding the printed posters </b>with the words “UAW ON STRIKE” went through the campus. 
+
+                </p>
+            </div>
+            <div class="col"><img src="img/2.jfif" alt="world" width="540" height="600"></div>
+        </div>
+    </section>
+    <section class="fullPage" id="section10">
+        <div class="row" style="height: 100%; display: flex; align-items: center; justify-content: center;">
+            <canvas data-processing-sources="mySketch.pde"></canvas>
+        </div>
     </section>
     <!--  <section class="fullPage" id="section5">
         <div id="kk"></div>
@@ -169,6 +345,7 @@
             thissound.currentTime = 0;
         }
     </script>
+
 
     <!--vanilla JS-->
     <script src="js/textbox.js"></script>

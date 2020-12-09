@@ -1,0 +1,47 @@
+.row-cols-3 {
+    margin: 50px auto;
+    color: white;
+    font-size: 1.8em;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+.row-cols-3 a {
+    font-weight: 700;
+    color: #eee;
+}
+
+.row-cols-3 .year {
+    border-left: 1px solid white;
+    color: #e6108d;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: overline;
+
+}
+
+.row-cols-3 .big {
+    font-size: 14px;
+    color: #eee;
+    font-weight: 100;
+    margin-bottom: .5em;
+
+    padding-left: 15px;
+}
+
+.row-cols-3 .aside {
+    color: #2e519b;
+    font-size: 14px;
+    border-left: 1px solid white;
+    padding-left: 10px;
+    padding-bottom: 20px;
+
+}
+
+.row-cols-3 ul {
+    list-style: circle;
+}
+
+.container1 {
+   
+    overflow-y: scroll;
+}
